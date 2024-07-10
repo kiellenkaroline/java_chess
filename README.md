@@ -4,7 +4,7 @@
 - Herança
 - Exceções
 - Sobrecarga
-- Polimorfismo (ToString)
+- Polimorfismo 
 - Sobreposição
 - Encapsulamento / modificadores de acesso
 - Método / classe abstrata
