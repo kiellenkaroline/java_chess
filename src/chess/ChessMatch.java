@@ -91,6 +91,7 @@ public class ChessMatch {
         currentPlayer= (currentPlayer == Color.WHITE) ? Color.BLACK : Color.WHITE;
     }
     private void placeNewPiece(char column, int row, ChessPiece piece) {
+        column = Character.toLowerCase(column);
         board.placePiece(piece, new ChessPosition(column, row).toPosition());
         piecesOnTheBoard.add(piece);
     }
@@ -103,7 +104,7 @@ public class ChessMatch {
         placeNewPiece('d', 1, new King(board, Color.WHITE));
 
         placeNewPiece('c', 7, new Rook(board, Color.BLACK));
-        placeNewPiece('C', 8, new Rook(board, Color.BLACK));
+        placeNewPiece('c', 8, new Rook(board, Color.BLACK));
         placeNewPiece('d', 7, new Rook(board, Color.BLACK));
         placeNewPiece('e', 7, new Rook(board, Color.BLACK));
         placeNewPiece('e', 8, new Rook(board, Color.BLACK));
